@@ -1,0 +1,3 @@
+packages:
+  - 'ember-media-query'
+  - 'test-app'
