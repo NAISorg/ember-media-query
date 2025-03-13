@@ -34,7 +34,9 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.9",
-    "decorator-transforms": "^2.2.2"
+    "@embroider/macros": "^1.16.11",
+    "decorator-transforms": "^2.2.2",
+    "tracked-built-ins": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -68,6 +70,9 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./helpers/media.js": "./dist/_app_/helpers/media.js",
+      "./services/media.js": "./dist/_app_/services/media.js"
+    }
   }
 }
