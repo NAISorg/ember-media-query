@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 export default class Media extends Helper {
   @service media;
 
-  compute([names]) {
+  compute(names) {
     return this.media.is(names);
   }
 }

@@ -28,6 +28,9 @@ module(
           {{#if (media "desktop")}}
             Definitely desktop
           {{/if}}
+          {{#if (media "small" "medium")}}
+            Both small and medium
+          {{/if}}
         </template>,
       );
     });
@@ -57,6 +60,8 @@ module(
           'Definitely small Definitely medium',
           'Correctly reports multiple breakpoints',
         );
+
+      assert.dom().hasText('Both small and medium', 'Correctly reports multiple breakpoints via the helper');
     });
 
     test('Defaults to "desktop" when setBreakpoint is not used', async function (assert) {

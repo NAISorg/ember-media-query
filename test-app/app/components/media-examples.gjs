@@ -54,14 +54,20 @@ export default class MediaExamples extends Component {
     </table>
 
     <h2>Test of list of matches</h2>
-    <p data-test-matches>
+    <p>
       List of the current matches:
-      <strong>{{this.media.matches}}</strong>
+      <strong data-test-matches>{{this.media.matches}}</strong>
     </p>
 
     <h2>The following tests the media helper with multiple breakpoints:</h2>
-    <p data-test-large-and-small>Is both Large and Desktop?
-      {{#if (media "desktop" "large")}}<strong
-        >True</strong>{{else}}False{{/if}}</p>
+    <p>Is both Large and Desktop?
+      <span data-test-large-and-desktop>
+        {{#if (media "desktop" "large")}}
+          True
+        {{else}}
+          False
+        {{/if}}
+      </span>
+    </p>
   </template>
 }
