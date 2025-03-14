@@ -13,8 +13,7 @@
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test",
     "test:ember": "pnpm --filter '*' test:ember",
-    "lint:format": "pnpm --filter '*' lint:format",
-    "lint:format:fix": "pnpm --filter '*' lint:format:fix"
+    "format": "pnpm --filter '*' format"
   },
   "packageManager": "pnpm@10.5.2",
   "devDependencies": {

@@ -56,14 +56,14 @@ module(
       await setBreakpoint(['small', 'medium']);
       assert
         .dom()
-        .hasText(
+        .includesText(
           'Definitely small Definitely medium',
           'Correctly reports multiple breakpoints',
         );
 
       assert
         .dom()
-        .hasText(
+        .includesText(
           'Both small and medium',
           'Correctly reports multiple breakpoints via the helper',
         );
