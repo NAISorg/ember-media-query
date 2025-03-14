@@ -29,7 +29,7 @@ jobs:
       - name: Lint
         run: pnpm lint
       - name: Run Tests
-        run: pnpm test
+        run: pnpm test:ember
 
   floating:
     name: "Floating Dependencies"
@@ -48,7 +48,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --no-lockfile
       - name: Run Tests
-        run: pnpm test
+        run: pnpm test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}

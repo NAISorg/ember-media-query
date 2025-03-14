@@ -22,6 +22,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
+    "test:playwright": "pnpm exec playwright test",
     "test:ember": "ember test"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
     "@eslint/js": "^9.19.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@playwright/test": "^1.51.0",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^9.1.2",
     "ember-auto-import": "^2.10.0",
