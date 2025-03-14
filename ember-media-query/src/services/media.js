@@ -47,8 +47,9 @@ export default class Media extends Service {
    */
   match(breakpointName, query) {
     if (macroCondition(isTesting())) {
-      this.matchers[breakpointName] = { matches:
-          this._mockedBreakpoints.includes(breakpointName) };
+      this.matchers[breakpointName] = {
+        matches: this._mockedBreakpoints.includes(breakpointName),
+      };
       return;
     }
 
@@ -59,7 +60,10 @@ export default class Media extends Service {
     };
 
     if (this.#listeners[breakpointName]) {
-      this.matchers[breakpointName].removeEventListener('change', this.#listeners[breakpointName]);
+      this.matchers[breakpointName].removeEventListener(
+        'change',
+        this.#listeners[breakpointName],
+      );
     }
 
     this.#listeners[breakpointName] = listener;
@@ -91,12 +95,14 @@ export default class Media extends Service {
     return this.matchers[breakpointNames]?.matches;
   }
 
-    /**
+  /**
    * Returns a list of currently matching matchers
    * @returns {string[]} - An array of matching breakpoint names
    */
   get matches() {
-    return Object.keys(this.matchers).filter((breakpointName) => this.matchers[breakpointName].matches);
+    return Object.keys(this.matchers).filter(
+      (breakpointName) => this.matchers[breakpointName].matches,
+    );
   }
 
   /**
@@ -104,7 +110,9 @@ export default class Media extends Service {
    * @throws {Error} - Not implemented error
    */
   get classNames() {
-    throw new Error('Not implemented. Please see the README for ember-media-query');
+    throw new Error(
+      'Not implemented. Please see the README for ember-media-query',
+    );
   }
 
   /**

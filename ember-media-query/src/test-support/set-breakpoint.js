@@ -10,7 +10,7 @@ export function setBreakpoint(breakpoint) {
   breakpointArray.forEach((breakpointName) => {
     if (!knownBreakpoints.includes(breakpointName)) {
       throw new Error(
-        `Breakpoint "${breakpointName}" not defined on the media service`
+        `Breakpoint "${breakpointName}" not defined on the media service`,
       );
     }
   });
