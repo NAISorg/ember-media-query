@@ -1,10 +1,14 @@
 {
   "private": true,
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NAISorg/ember-media-query.git"
+  },
   "license": "MIT",
   "author": "",
   "scripts": {
     "build": "pnpm --filter ember-media-query build",
+    "format": "pnpm --filter '*' format",
     "lint": "pnpm --filter '*' lint",
     "lint:fix": "pnpm --filter '*' lint:fix",
     "prepare": "pnpm build",
@@ -12,13 +16,13 @@
     "start:addon": "pnpm --filter ember-media-query start --no-watch.clearScreen",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test",
-    "test:ember": "pnpm --filter '*' test:ember",
-    "format": "pnpm --filter '*' format"
+    "test:ember": "pnpm --filter '*' test:ember"
   },
-  "packageManager": "pnpm@10.5.2",
   "devDependencies": {
     "concurrently": "^9.1.2",
     "prettier": "^3.0.3",
-    "prettier-plugin-ember-template-tag": "^2.0.2"
-  }
+    "prettier-plugin-ember-template-tag": "^2.0.2",
+    "release-plan": "^0.16.0"
+  },
+  "packageManager": "pnpm@10.5.2"
 }
