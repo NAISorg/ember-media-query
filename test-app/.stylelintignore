@@ -6,3 +6,11 @@
 
 # addons
 /.node_modules.ember-try/
+
+# dependencies
+/node-modules/
+
+# playwright
+/test-results/
+/playwright-report/
+
