@@ -61,7 +61,12 @@ module(
           'Correctly reports multiple breakpoints',
         );
 
-      assert.dom().hasText('Both small and medium', 'Correctly reports multiple breakpoints via the helper');
+      assert
+        .dom()
+        .hasText(
+          'Both small and medium',
+          'Correctly reports multiple breakpoints via the helper',
+        );
     });
 
     test('Defaults to "desktop" when setBreakpoint is not used', async function (assert) {

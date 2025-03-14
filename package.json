@@ -12,7 +12,9 @@
     "start:addon": "pnpm --filter ember-media-query start --no-watch.clearScreen",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test",
-    "test:ember": "pnpm --filter '*' test:ember"
+    "test:ember": "pnpm --filter '*' test:ember",
+    "lint:format": "pnpm --filter '*' lint:format",
+    "lint:format:fix": "pnpm --filter '*' lint:format:fix"
   },
   "packageManager": "pnpm@10.5.2",
   "devDependencies": {

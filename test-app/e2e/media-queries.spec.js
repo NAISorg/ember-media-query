@@ -11,7 +11,9 @@ const breakpoints = {
 
 const matchesList = '[data-test-matches]';
 
-test('matching breakpoints update as viewport and preferences change', async ({ page }) => {
+test('matching breakpoints update as viewport and preferences change', async ({
+  page,
+}) => {
   await page.setViewportSize({
     width: 399,
     height: 480,
