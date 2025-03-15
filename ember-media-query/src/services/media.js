@@ -4,6 +4,10 @@ import { tracked } from '@glimmer/tracking';
 import { isTesting, macroCondition } from '@embroider/macros';
 import { registerDestructor } from '@ember/destroyable';
 
+/* This comment is here because programming is awful
+ * the release infrastructure requires a change to the
+ * package dir via PR to trigger a release.
+ */
 /**
  * @class Media
  * @extends Service
