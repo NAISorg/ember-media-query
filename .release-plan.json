@@ -1,0 +1,18 @@
+{
+  "solution": {
+    "ember-media-query": {
+      "impact": "major",
+      "oldVersion": "0.0.0",
+      "newVersion": "1.0.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        }
+      ],
+      "pkgJSONPath": "./ember-media-query/package.json"
+    }
+  },
+  "description": "## Release (2025-03-15)\n\n* ember-media-query 1.0.0 (major)\n\n#### :boom: Breaking Change\n* `ember-media-query`\n  * [#6](https://github.com/NAISorg/ember-media-query/pull/6) Update package just to get the release to work ([@kategengler](https://github.com/kategengler))\n* Other\n  * [#5](https://github.com/NAISorg/ember-media-query/pull/5) Add note about MediaQueryList to README ([@kategengler](https://github.com/kategengler))\n  * [#1](https://github.com/NAISorg/ember-media-query/pull/1) Setup releasing via release-plan ([@kategengler](https://github.com/kategengler))\n\n#### :house: Internal\n* [#4](https://github.com/NAISorg/ember-media-query/pull/4) Revert \"Downgrade release-plan\" ([@kategengler](https://github.com/kategengler))\n* [#3](https://github.com/NAISorg/ember-media-query/pull/3) Downgrade release-plan ([@kategengler](https://github.com/kategengler))\n* [#1](https://github.com/NAISorg/ember-media-query/pull/1) Setup releasing via release-plan ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
+}
