@@ -5,7 +5,10 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NAISorg/ember-media-query.git"
+  },
   "license": "MIT",
   "author": "",
   "exports": {
