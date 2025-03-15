@@ -197,6 +197,12 @@ The `media` service does not provide `classNames`. You can recreate it by:
   }
 ```
 
+### [`MediaQueryList`](https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList) objects are no longer exposed via breakpoint names
+
+In `ember-responsive`, you could access the `MediaQueryList` object for a breakpoint by
+`this.media.mobile`. This is not supported. You can get the `MediaQueryList` object for a breakpoint
+by `this.media.matches['mobile']`.
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
