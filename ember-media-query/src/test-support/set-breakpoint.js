@@ -6,16 +6,10 @@ export function setBreakpoint(breakpoint) {
   const breakpointArray = Array.isArray(breakpoint) ? breakpoint : [breakpoint];
   media._mockedBreakpoints = breakpointArray;
   const knownBreakpoints = Object.keys(media.matchers);
-
-  breakpointArray.forEach((breakpointName) => {
-    if (!knownBreakpoints.includes(breakpointName)) {
-      throw new Error(
-        `Breakpoint "${breakpointName}" not defined on the media service`,
-      );
-    }
-  });
-
-  knownBreakpoints.forEach((breakpointName) => {
+  const uniqueBreakpoints = [
+    ...new Set([...knownBreakpoints, ...breakpointArray]),
+  ];
+  uniqueBreakpoints.forEach((breakpointName) => {
     media.match(breakpointName, 'mocked');
   });
 

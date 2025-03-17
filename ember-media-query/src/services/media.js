@@ -93,10 +93,18 @@ export default class Media extends Service {
    * @returns {boolean} - True if all specified breakpoints are matching
    */
   is(breakpointNames) {
+    const matches = (name) => {
+      if (!this.matchers[name]) {
+        throw new Error(
+          `Breakpoint "${name}" not defined on the media service`,
+        );
+      }
+      return this.matchers[name]?.matches;
+    };
     if (Array.isArray(breakpointNames)) {
-      return breakpointNames.every((name) => this.matchers[name]?.matches);
+      return breakpointNames.every(matches);
     }
-    return this.matchers[breakpointNames]?.matches;
+    return matches(breakpointNames);
   }
 
   /**
