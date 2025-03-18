@@ -141,7 +141,7 @@ import { setBreakpoint } from 'ember-media-query/test-support';
 ...
 
 test('example test', async function(assert) {
-  setBreakpoint('mobile');
+  await setBreakpoint('mobile');
   await visit('/');
 
   assert.dom('p').hasText('Mobile');
@@ -155,7 +155,7 @@ You can also set multiple breakpoints, useful to test when breakpoints overlap:
 import { setBreakpoint } from 'ember-media-query/test-support';
 
 test('it renders', async function(assert) {
-  setBreakpoint(['tablet', 'desktop']);
+  await setBreakpoint(['tablet', 'desktop']);
 
   await render(hbs`<YourComponent />`);
   
@@ -165,6 +165,9 @@ test('it renders', async function(assert) {
 The `setBreakpoint` helper completely mocks the breakpoints. It does not use `window.matchMedia` to check the breakpoints.
 It is only useful for testing the JavaScript or template logic that is based on 
 active breakpoints, not for testing stylesheets.
+
+`setBreakpoint` was always awaitable (it has always returned `settled`), but moving
+to `ember-media-query` you may find you need to ensure you use `await` in your tests.
 
 ## Migrating from ember-responsive
 
