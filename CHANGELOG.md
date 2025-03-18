@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-03-18)
 
 * ember-media-query 1.0.3 (patch)

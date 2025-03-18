@@ -1,18 +1,8 @@
 {
   "solution": {
     "ember-media-query": {
-      "impact": "patch",
-      "oldVersion": "1.0.2",
-      "newVersion": "1.0.3",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./ember-media-query/package.json"
+      "oldVersion": "1.0.3"
     }
   },
-  "description": "## Release (2025-03-18)\n\n* ember-media-query 1.0.3 (patch)\n\n#### :bug: Bug Fix\n* `ember-media-query`\n  * [#12](https://github.com/NAISorg/ember-media-query/pull/12) Fix setBreakpoint -- there was a chicken/egg setup issue with the ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
+  "description": "\n\n\n\n"
 }
