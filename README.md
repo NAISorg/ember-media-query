@@ -52,6 +52,14 @@ export default class ApplicationRoute extends Route {
 }
 ```
 
+You may wish to also call setBreakpoints in `setupRenderingTest` and `setupApplicationTest` in `tests/helpers/index.js`.
+
+```js
+  hooks.beforeEach(function () {
+    this.owner.lookup('service:media').setBreakpoints(breakpoints);
+  });
+```
+
 ### `media` Service
 
 The `media` service may be injected into your components or routes or other framework classes. 
