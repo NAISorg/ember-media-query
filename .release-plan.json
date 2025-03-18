@@ -2,8 +2,8 @@
   "solution": {
     "ember-media-query": {
       "impact": "patch",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.0.2",
+      "oldVersion": "1.0.2",
+      "newVersion": "1.0.3",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./ember-media-query/package.json"
     }
   },
-  "description": "## Release (2025-03-17)\n\n* ember-media-query 1.0.2 (patch)\n\n#### :bug: Bug Fix\n* `ember-media-query`\n  * [#9](https://github.com/NAISorg/ember-media-query/pull/9) Add missing peer dep on @ember/test-helpers ([@kategengler](https://github.com/kategengler))\n\n#### :house: Internal\n* [#11](https://github.com/NAISorg/ember-media-query/pull/11) Upgrade ember-try ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
+  "description": "## Release (2025-03-18)\n\n* ember-media-query 1.0.3 (patch)\n\n#### :bug: Bug Fix\n* `ember-media-query`\n  * [#12](https://github.com/NAISorg/ember-media-query/pull/12) Fix setBreakpoint -- there was a chicken/egg setup issue with the ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
 }

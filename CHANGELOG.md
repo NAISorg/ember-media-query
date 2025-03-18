@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-03-18)
+
+* ember-media-query 1.0.3 (patch)
+
+#### :bug: Bug Fix
+* `ember-media-query`
+  * [#12](https://github.com/NAISorg/ember-media-query/pull/12) Fix setBreakpoint -- there was a chicken/egg setup issue with the ([@kategengler](https://github.com/kategengler))
+
+#### Committers: 1
+- Katie Gengler ([@kategengler](https://github.com/kategengler))
+
 ## Release (2025-03-17)
 
 * ember-media-query 1.0.2 (patch)
