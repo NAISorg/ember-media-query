@@ -93,6 +93,10 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./helpers/media.js": "./dist/_app_/helpers/media.js",
+      "./services/media.js": "./dist/_app_/services/media.js"
+    }
   }
 }
