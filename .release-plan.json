@@ -2,8 +2,8 @@
   "solution": {
     "ember-media-query": {
       "impact": "patch",
-      "oldVersion": "1.0.2",
-      "newVersion": "1.0.3",
+      "oldVersion": "1.0.3",
+      "newVersion": "1.0.4",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./ember-media-query/package.json"
     }
   },
-  "description": "## Release (2025-03-18)\n\n* ember-media-query 1.0.3 (patch)\n\n#### :bug: Bug Fix\n* `ember-media-query`\n  * [#12](https://github.com/NAISorg/ember-media-query/pull/12) Fix setBreakpoint -- there was a chicken/egg setup issue with the ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
+  "description": "## Release (2026-09-01)\n\n* ember-media-query 1.0.4 (patch)\n\n#### :bug: Bug Fix\n* `ember-media-query`\n  * [#15](https://github.com/NAISorg/ember-media-query/pull/15) Move from import inject -> import service to avoid deprecation ([@kategengler](https://github.com/kategengler))\n\n#### Committers: 1\n- Katie Gengler ([@kategengler](https://github.com/kategengler))\n"
 }
