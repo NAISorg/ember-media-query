@@ -1,6 +1,6 @@
 # ember-media-query
 
-Provides convenience utilities for [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia). 
+Provides convenience utilities for [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia).
 
 Aims to be a successor to [ember-responsive](https://www.npmjs.com/package/ember-responsive).
 See [Migrating from ember-responsive](#migrating-from-ember-responsive) for more details.
@@ -9,7 +9,7 @@ If starting fresh to design UI based on available space, you may want to conside
 
 ## Compatibility
 
-- Ember.js v4.12 or above
+- Ember.js v5.8 or above
 - Embroider or ember-auto-import v2
 
 ## Installation
@@ -33,8 +33,8 @@ export default {
 };
 ```
 
-Any [media query string](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) 
-can be specified here, not just those based on size. 
+Any [media query string](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
+can be specified here, not just those based on size.
 
 Set your breakpoints in `app/routes/application.js`:
 
@@ -62,7 +62,7 @@ You may wish to also call setBreakpoints in `setupRenderingTest` and `setupAppli
 
 ### `media` Service
 
-The `media` service may be injected into your components or routes or other framework classes. 
+The `media` service may be injected into your components or routes or other framework classes.
 
 #### Checking Active Breakpoints
 
@@ -108,8 +108,8 @@ Breakpoints can be added in bulk by passing an object to `setBreakpoints`
 
 ### `media` template helper
 
-The `media` helper returns true when the breakpoint (name from the key in the 
-breakpoints object) passed is active.  
+The `media` helper returns true when the breakpoint (name from the key in the
+breakpoints object) passed is active.
 
 ```gjs
 import { media } from 'ember-media-query';
@@ -129,7 +129,7 @@ import { media } from 'ember-media-query';
 ```
 
 `ember-responsive` took `isMobile`, `isTablet`, etc. as arguments to the media
-helper. This is currently supported but deprecated. 
+helper. This is currently supported but deprecated.
 
 ### Testing
 
@@ -163,7 +163,7 @@ test('it renders', async function(assert) {
 ```
 
 The `setBreakpoint` helper completely mocks the breakpoints. It does not use `window.matchMedia` to check the breakpoints.
-It is only useful for testing the JavaScript or template logic that is based on 
+It is only useful for testing the JavaScript or template logic that is based on
 active breakpoints, not for testing stylesheets.
 
 `setBreakpoint` was always awaitable (it has always returned `settled`), but moving
@@ -187,7 +187,7 @@ You can find your existing breakpoints in `app/breakpoints.js`.
 ### `media` helper no longer takes `isMobile`, `isTablet`, etc. as arguments
 
 `ember-responsive` provided a `media` helper that took `isMobile`, `isTablet`, etc. as arguments.
-This is currently supported but deprecated. 
+This is currently supported but deprecated.
 
 Find and replace all instances of `{{media 'isMobile'}}` with `{{media 'mobile'}}`, etc.
 

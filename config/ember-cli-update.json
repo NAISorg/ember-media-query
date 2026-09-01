@@ -3,16 +3,13 @@
   "projectName": "ember-media-query",
   "packages": [
     {
-      "name": "@embroider/addon-blueprint",
-      "version": "4.1.0",
+      "name": "@ember/addon-blueprint",
+      "version": "0.18.0",
       "blueprints": [
         {
-          "name": "@embroider/addon-blueprint",
+          "name": "@ember/addon-blueprint",
           "isBaseBlueprint": true,
-          "options": [
-            "--ci-provider=github",
-            "--pnpm"
-          ]
+          "options": ["--ci-provider=github", "--pnpm"]
         }
       ]
     }
