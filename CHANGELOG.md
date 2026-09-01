@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-09-01)
+
+* ember-media-query 1.0.4 (patch)
+
+#### :bug: Bug Fix
+* `ember-media-query`
+  * [#15](https://github.com/NAISorg/ember-media-query/pull/15) Move from import inject -> import service to avoid deprecation ([@kategengler](https://github.com/kategengler))
+
+#### Committers: 1
+- Katie Gengler ([@kategengler](https://github.com/kategengler))
+
 ## Release (2025-03-18)
 
 * ember-media-query 1.0.3 (patch)
